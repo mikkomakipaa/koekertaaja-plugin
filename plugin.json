@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "test-buddy",
+  "version": "0.3.1",
+  "description": "Test Buddy shows a practice quiz or a short lesson as an interactive screen inside the chat, for Finnish school subjects at grades 4–9.",
+  "author": {
+    "name": "Mikko Mäkipää",
+    "url": "https://www.koekertaaja.fi"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "homepage": "https://www.koekertaaja.fi",
+  "keywords": [
+    "education",
+    "quiz",
+    "exam preparation",
+    "Finnish curriculum"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Test Buddy",
+        "shortDescription": "Interactive practice quiz",
+        "longDescription": "Practise school subjects with an interactive quiz of up to ten questions per round (longer practice runs in rounds), or learn a topic with a short lesson of cards, quick checks and simple visuals, all shown inside the chat. Name a topic and grade (4–9) or upload your material. Study Helper offers simpler explanations, a hint before you answer, the reason why, another way to explain a wrong answer, and an extra example on lesson cards. Questions and lessons are made by AI and are not official exam content: check them against your textbook. The quiz or lesson you start (topic and questions) is sent to the plugin's server to display the screen. Test build for the plugin owner.",
+        "websiteURL": "https://www.koekertaaja.fi/fi/chatgpt#plugin",
+        "developerName": "Mikko Mäkipää",
+        "category": "Education & Research",
+        "capabilities": [],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Open Koekertaaja",
+          "Quiz me on prehistory, grade 6",
+          "Teach me prehistory, grade 6"
+        ]
+      }
+    }
+  }
+}

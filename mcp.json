@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "koekertaaja": {
+      "type": "streamable-http",
+      "url": "https://koekertaaja-mcp-spike-mikkomakipaas-projects.vercel.app/mcp"
+    }
+  }
+}

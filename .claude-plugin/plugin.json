@@ -1,0 +1,19 @@
+{
+  "name": "test-buddy",
+  "displayName": "Test Buddy",
+  "version": "0.3.1",
+  "description": "Test Buddy shows a practice quiz or a short lesson as an interactive screen inside the chat, for Finnish school subjects at grades 4–9.",
+  "author": {
+    "name": "Mikko Mäkipää",
+    "url": "https://www.koekertaaja.fi"
+  },
+  "homepage": "https://www.koekertaaja.fi",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "education",
+    "quiz",
+    "exam preparation",
+    "Finnish curriculum"
+  ],
+  "privacyPolicyUrl": "https://www.koekertaaja.fi/en/chatgpt#privacy"
+}
