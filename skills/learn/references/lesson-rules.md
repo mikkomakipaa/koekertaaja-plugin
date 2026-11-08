@@ -24,10 +24,10 @@ Keep the prepared lesson as a JSON object (not shown to the student). The cards 
 
 ## Shape
 
-- 3-5 cards. `meta.basis` is `user_material` or `model_knowledge`.
+- 3-8 cards (the start message names the number; default 4). `meta.basis` is `user_material` or `model_knowledge`.
 - Per card, limits: `heading` at most 8 words (one idea), `keyIdea` at most 25 words, `example` at most 25 words, `remember` at most 20 words (a memory hook, not a question).
 - Each card has one `check`: a question with `question`, `type` (`multiple_choice` with exactly 4 distinct options and `correct_answer` equal to one option; `true_false` with a boolean; or `fill_blank` containing `______`, with optional `acceptable_answers`), `correct_answer` and an `explanation` of 2-3 sentences.
-- No other fields. Cards follow the order in which the topic is naturally taught. One idea per card; no repeated facts.
+- The `start_lesson` tool also takes, per card, `topic`, the help texts `helpSimpler`, `helpWhy` and `helpExample`, and an optional `visual`; the tool's own field names and limits win over this file. Cards follow the order in which the topic is naturally taught. One idea per card; no repeated facts.
 
 ## Content accuracy (the central quality risk)
 

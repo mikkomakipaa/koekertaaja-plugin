@@ -14,7 +14,7 @@ It offers up to five predefined requests, no open chat, and answer leakage that 
 | **Explain another way** | After a wrong answer only: the idea again with a different approach, such as an analogy. |
 | **Show an example** | On a Learn card after the check is answered: one more concrete, true example, only where it helps. |
 
-Show them (in the student's language, see `ui-strings.md`) behind a quiet "Study Helper" button ("Need help?"). Study Helper never opens by itself.
+Show them (in the student's language) behind a quiet "Study Helper" button ("Need help?"). Study Helper never opens by itself.
 
 ## What is allowed, by mode (answer leakage)
 
@@ -35,7 +35,7 @@ A **hint** points to the key idea or where to look ("Think about what was said a
 - Explain from the current card or question and the student's own material first. Add nothing that contradicts them.
 - Beyond that, add facts only if you are certain and they are typical for the grade. Never invent dates, names, numbers, places or causes.
 - If you cannot explain reliably, say so plainly ("I can't explain this reliably from this material") and offer another request or the next step. This is a correct outcome, not an error.
-- Help answers are not reviewed by a teacher: label each help answer as AI-made ("AI-made explanation, check your textbook if needed") once per activity, and never call it "checked", "reviewed" or "approved" (translations in `ui-strings.md`).
+- Help answers are not reviewed by a teacher: label each help answer as AI-made ("AI-made explanation, check your textbook if needed") once per activity, and never call it "checked", "reviewed" or "approved" (in the student's language).
 
 ## Behaviour
 
