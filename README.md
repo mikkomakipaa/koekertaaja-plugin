@@ -7,6 +7,16 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 - **Start screen:** open Test Buddy without a request and choose Play or Learn, topic and grade. Attach your own material in the chat first if you have it.
 - **Study Helper:** simpler explanation, the reason why, a hint (before answering), another way to explain it (after a wrong answer) and an extra example on Learn cards. Before you answer, nothing gives the answer away.
 
+## Install
+
+In Claude Code (2.1.275 or later):
+
+```
+/plugin install test-buddy --marketplace mikkomakipaa/koekertaaja-plugin
+```
+
+In Claude desktop, add the plugin from the directory or upload the plugin ZIP.
+
 ## What the plugin sends and where
 
 This plugin contains two skills (Play and Learn) and connects to one remote MCP server (`.mcp.json`), which shows the quiz or lesson screen. When you start a quiz or lesson, the AI service sends its content (topic, questions and answers, and any topic names or progress counts) to that server, which checks it and returns it to your chat. The server does not store it, has no database or account system, makes no outgoing requests and sends nothing elsewhere. The hosting platform keeps standard request metadata (time, path, status, user agent, region) for a short period; it does not record the content. Scores and progress stay in your browser and your chat. Do not share names or other personal details.

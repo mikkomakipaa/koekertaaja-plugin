@@ -1,0 +1,17 @@
+{
+  "name": "koekertaaja-plugin",
+  "owner": {
+    "name": "Mikko Mäkipää",
+    "url": "https://www.koekertaaja.fi"
+  },
+  "plugins": [
+    {
+      "name": "test-buddy",
+      "source": "./",
+      "description": "Practise for school exams with an interactive quiz, or learn a topic step by step, in the chat. Finnish school subjects, grades 4–9."
+    }
+  ],
+  "metadata": {
+    "description": "Test Buddy, a Koekertaaja plugin for exam practice and learning in the chat."
+  }
+}
