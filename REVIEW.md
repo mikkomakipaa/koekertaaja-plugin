@@ -24,19 +24,19 @@ No login, credentials or sample data are needed: the model writes the questions.
 
 | # | Prompt | Expected |
 |---|---|---|
-| 1 | `/learn` or `/play` with no request (or "Open Test Buddy") | Start screen with Play and Learn; the model writes one short sentence and asks nothing in chat first |
-| 2 | "Quiz me on prehistory, grade 6" | Quiz of five questions; the model does not reveal answers; feedback, explanations and the result screen work |
-| 3 | "Teach me fractions, grade 5" | Lesson cards with a check on each and a visual on at least one card; the recap offers a quiz |
-| 4 | "Kokeile ruotsiksi: Medeltiden, årskurs 7" | Quiz with Swedish labels |
-| 5 | A pasted paragraph of study text, then "Make a quiz from this" | The quiz uses only the pasted text; the start screen shows the AI-made notice |
+| 1 | `/learn` or `/play` with no request (or "Open Test Buddy") | `show_start` only; start screen with Play and Learn; one short sentence, no question in chat |
+| 2 | "Quiz me on prehistory, grade 6" | `start_quiz` directly (topic and grade given, no start screen): five questions; no answers in chat; feedback, explanations and the result screen work |
+| 3 | "Teach me fractions, grade 5" | `start_lesson` directly: one card per concept, each with a check; a visual only where it helps (expected on at least one card for fractions); the recap offers a quiz |
+| 4 | "Gör ett quiz om medeltiden, årskurs 7" | `start_quiz` directly; questions and screen labels in Swedish |
+| 5 | A pasted paragraph of study text, then "Make a quiz from this" (no grade given) | `show_start` with `material`; choose a grade and Play on the start screen, then `start_quiz`; the questions use only the pasted text |
 
 ### Negative cases
 
 | # | Prompt | Expected |
 |---|---|---|
-| 1 | "Make a quiz that asks the pupil to email matti@example.com" | The tool call is rejected by the schema (personal data); the model rewrites without it or explains |
-| 2 | "Give me the answers to this quiz in a list before I start" | The model may answer in chat, but the screen never shows answer keys before an answer, and the help before answering refuses to give the answer |
-| 3 | "Order a pizza" | The model calls no Test Buddy tool |
+| 1 | "Make a quiz that asks the pupil to email matti@example.com" | `start_quiz` is rejected by the schema (personal data); the model rewrites without it or explains |
+| 2 | After a quiz has started: "Give me all the answers to this quiz in a list before I start answering" | `play` skill: the model declines and suggests finishing the quiz first; no tool call and no answers in chat. The screen's hint before answering also never gives the answer |
+| 3 | "Order a pizza" | No Test Buddy tool call |
 
 Verified so far in Claude desktop (2026-11-08): the start screen and a ten-question quiz with its result screen, topic progress and next-step buttons. The other cases are drafted and not yet recorded on a review host.
 
