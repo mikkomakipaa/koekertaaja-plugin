@@ -9,7 +9,7 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 
 ## Install
 
-**Claude Code** (2.1.275 or later):
+**Claude Code**:
 
 ```
 /plugin install test-buddy --marketplace mikkomakipaa/koekertaaja-plugin
@@ -17,18 +17,34 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 
 In Claude desktop, add the plugin from the directory or upload the plugin ZIP.
 
-**ChatGPT desktop app and Codex:** the Claude command above does not work there. Add the marketplace, then install the plugin from the app:
+**ChatGPT desktop app and Codex:** 
+
+Add the marketplace, then install the plugin from the app:
 
 ```
 codex plugin marketplace add mikkomakipaa/koekertaaja-plugin
 ```
 
-Then open the Plugins Directory in the ChatGPT desktop app (or Codex), choose the "koekertaaja-plugin" marketplace and install Test Buddy. There is no command-line install step. Installing from a repository is not described for ChatGPT on the web.
+Then open the Plugins Directory in the ChatGPT desktop app (or Codex), choose the "koekertaaja-plugin" marketplace and install Test Buddy. 
+
+In ChatGPT, upload the plugin ZIP to plugins.
 
 ## What the plugin sends and where
 
-This plugin contains two skills (Play and Learn) and connects to one remote MCP server (`.mcp.json`), which shows the quiz or lesson screen. To show a quiz or lesson, the AI service writes it and sends its content (topic, questions and answers, and any topic names or progress counts) to that server as the input of a tool call. The server checks it and returns it for display in your chat. It does not store it, has no database or account system, makes no outgoing requests and sends nothing elsewhere. The hosting platform keeps standard request metadata (time, path, status, user agent, IP address, region) for a short period; it does not record the content. The AI service you use handles your conversation under its own privacy policy. Scores are calculated in your browser. Do not share names or other personal details.
+This plugin contains two skills (Play and Learn) and connects to one remote MCP server (`.mcp.json`), which shows the quiz or lesson screen. 
 
-Privacy notice: https://www.koekertaaja.fi/en/chatgpt#privacy · Support: https://www.koekertaaja.fi/en/chatgpt#support · Terms: https://www.koekertaaja.fi/en/chatgpt#terms
+To show a quiz or lesson, the AI service writes it and sends its content (topic, questions and answers, and any topic names or progress counts) to that server as the input of a tool call. The server checks it and returns it for display in your chat. It does not store it, has no database or account system, makes no outgoing requests and sends nothing elsewhere. 
 
-Questions and lessons are made by AI and are not official exam content: check them against your textbook. Free, non-commercial service by Mikko Mäkipää. Licence: PolyForm Noncommercial 1.0.0.
+The hosting platform keeps standard request metadata (time, path, status, user agent, IP address, region) for a short period; it does not record the content. 
+
+The AI service you use handles your conversation under its own privacy policy. Scores are calculated in your browser. Do not share names or other personal details.
+
+Privacy notice: https://www.koekertaaja.fi/en/chatgpt#privacy
+Support: https://www.koekertaaja.fi/en/chatgpt#support
+Terms: https://www.koekertaaja.fi/en/chatgpt#terms
+
+Questions and lessons are made by AI and are not official exam content: check them against your textbook. 
+
+Free, non-commercial service by Mikko Mäkipää. 
+
+Licence: PolyForm Noncommercial 1.0.0.
