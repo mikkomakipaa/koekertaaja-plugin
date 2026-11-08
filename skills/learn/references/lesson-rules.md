@@ -24,8 +24,8 @@ Keep the prepared lesson as a JSON object (not shown to the student). The cards 
 
 ## Shape
 
-- 3-8 cards (the start message names the number; default 4). `meta.basis` is `user_material` or `model_knowledge`.
-- Per card, limits: `heading` at most 8 words (one idea), `keyIdea` at most 25 words, `example` at most 25 words, `remember` at most 20 words (a memory hook, not a question).
+- One card per concept, 1 to 24: the number follows the topics and the concepts within them (the start message names it; default 4). `meta.basis` is `user_material` or `model_knowledge`.
+- Per card, limits: `heading` at most 12 words (one idea), `keyIdea` at most 50 words, `example` at most 50 words, `remember` at most 40 words (a memory hook, not a question).
 - Each card has one `check`: a question with `question`, `type` (`multiple_choice` with exactly 4 distinct options and `correct_answer` equal to one option; `true_false` with a boolean; or `fill_blank` containing `______`, with optional `acceptable_answers`), `correct_answer` and an `explanation` of 2-3 sentences.
 - The `start_lesson` tool also takes, per card, `topic`, the help texts `helpSimpler`, `helpWhy` and `helpExample`, and an optional `visual`; the tool's own field names and limits win over this file. Cards follow the order in which the topic is naturally taught. One idea per card; no repeated facts.
 
@@ -34,7 +34,7 @@ Keep the prepared lesson as a JSON object (not shown to the student). The cards 
 There is no human reviewer in this experience, so you are the only gate. Fail closed.
 
 - Use only facts from the student's material. Without material, use only facts you are certain of; drop anything uncertain. Never invent or "correct" dates, numbers, names, places or causes.
-- If there are fewer than 3 reliable cards, say so and offer a different topic. Do not pad with general knowledge.
+- If you cannot make a reliable card, say so and offer a different topic. Do not pad with general knowledge.
 - Prefer the material's own terms and examples. Calibrate wording to the grade: short, concrete sentences; no jargon the material does not use.
 - A card's example must be uncontroversial and true. A check must be answerable from the card.
 - No personal data, nothing frightening or unsuitable for a child.

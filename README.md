@@ -1,9 +1,9 @@
 # Test Buddy
 
-Practise for school exams and learn a topic step by step, as an interactive screen inside the chat. Made for Finnish school subjects at grades 4–9; the grade describes the difficulty of the study material. Part of Koekertaaja (koekertaaja.fi).
+Practise for school exams and learn a topic step by step, as an interactive screen inside the chat. Made for Finnish school subjects. The grade you choose (for example grade 4) describes the difficulty of the study material. Part of Koekertaaja (koekertaaja.fi).
 
-- **Play:** name a topic and grade (4–9), or attach your material in the chat, and say "quiz me". Up to ten questions per round with feedback, a score, a review of mistakes and optional extra practice that never changes the score.
-- **Learn:** say "teach me". Three to eight short cards with a quick check each, simple timelines, processes and comparisons, and a recap that can start a quiz on the same topic.
+- **Play:** name a topic and a grade (for example grade 4), or attach your material in the chat, and say "quiz me". Up to ten questions per round with feedback, a score, a review of mistakes and optional extra practice that never changes the score.
+- **Learn:** say "teach me". Short cards, one per concept, with a quick check each, simple timelines, processes and comparisons, and a recap that can start a quiz on the same topic.
 - **Start screen:** open Test Buddy without a request and choose Play or Learn, topic and grade. Attach your own material in the chat first if you have it.
 - **Study Helper:** simpler explanation, the reason why, a hint (before answering), another way to explain it (after a wrong answer) and an extra example on Learn cards. Before you answer, nothing gives the answer away.
 

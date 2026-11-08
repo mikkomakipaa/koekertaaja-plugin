@@ -9,7 +9,7 @@ Everything lives in this conversation only. You cannot read progress from earlie
 ```
 Koekertaaja summary
 Topic: <topic>
-Grade: <4-9>
+Grade: <school grade>
 Language: <fi|sv|en>
 Practised: <topic>; <topic>
 May need another look: <topic>; <topic>

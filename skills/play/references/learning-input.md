@@ -6,7 +6,7 @@ Both skills start from the same normalised learning context. This file is identi
 interface LearningInput {
   sourceMaterial?: string;   // text, or an uploaded file or photo the host can read, if any
   subject?: string;
-  grade?: number;            // 4-9; never guessed
+  grade?: number;            // school grade matching the material's difficulty; never guessed
   topics: string[];          // at least one before starting
   language: "fi" | "sv" | "en";
   learningGoal?: string;     // what the student wants, in their words
@@ -15,7 +15,7 @@ interface LearningInput {
 
 ## Audience
 
-- Intended users are students, parents and teachers. Grades 4–9 describe the difficulty of the study material.
+- Intended users are students, parents and teachers. The grade describes the difficulty of the study material, not the age of the user; grade 4 is only an example.
 - Do not request a date of birth, names, school details or other personal information, and do not ask users to upload personal information about children.
 - Follow the host service’s own age requirements; they are set by the host, not by this plugin.
 
@@ -23,7 +23,7 @@ interface LearningInput {
 
 1. **Use what is already in the conversation first:** supplied or uploaded material (text, a photo or a PDF, if the host can read it), an exam announcement, an earlier round or lesson. If an upload cannot be read, say so and ask the student to paste the text. Do not ask again for something you already know.
 2. **Infer subject and topics** when reasonably clear from the material or the request (for example "kasvien osat" is biology). State what you inferred in one short line so the student can correct it.
-3. **Ask only for essential missing information**, at most two short questions, offered as choices where the host supports it. **In this package, when the pupil supplied material (an attachment or pasted text), ask nothing in chat:** the skill's setup step calls `show_start`, and the start screen collects topic, grade and Play or Learn. Rules 3 and 5 apply as written only when there is no material. Essential means: grade (4-9) and topic. Subject is usually inferable. Material is optional. Never guess the grade.
+3. **Ask only for essential missing information**, at most two short questions, offered as choices where the host supports it. **In this package, when the pupil supplied material (an attachment or pasted text), ask nothing in chat:** the skill's setup step calls `show_start`, and the start screen collects topic, grade and Play or Learn. Rules 3 and 5 apply as written only when there is no material. Essential means: grade and topic. Subject is usually inferable. Material is optional. Never guess the grade.
 4. **Never invent facts from material you do not have.** With material, use only it. Without material, use only facts you are certain of and say that the content is general school knowledge ("check your textbook if needed"). If you cannot work reliably on the topic, say so and suggest a nearby one.
 5. **Preserve the context when switching modes** (Play to Learn and back): carry over subject, grade, topics, language, material and, if relevant, which subtopics were missed. Do not ask for them again.
 
@@ -51,7 +51,7 @@ Use the language of the student's request (`fi` by default). Student-facing text
 
 ## Out of scope
 
-- Grades outside 4-9 or curricula other than the Finnish comprehensive school: say so; do not pretend to apply them.
+- Curricula other than the Finnish comprehensive school: say so; do not pretend to apply them.
 - Personal data (names, school, class): do not ask for it, do not store it, do not repeat it. If shared, ignore it.
 
 ## Memory
