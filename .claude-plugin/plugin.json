@@ -1,7 +1,7 @@
 {
   "name": "test-buddy",
   "displayName": "Test Buddy",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Test Buddy shows a practice quiz or a short lesson as an interactive screen inside the chat, for Finnish school subjects at grades 4–9.",
   "author": {
     "name": "Mikko Mäkipää",
