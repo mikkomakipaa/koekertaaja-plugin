@@ -9,13 +9,21 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 
 ## Install
 
-In Claude Code (2.1.275 or later):
+**Claude Code** (2.1.275 or later):
 
 ```
 /plugin install test-buddy --marketplace mikkomakipaa/koekertaaja-plugin
 ```
 
 In Claude desktop, add the plugin from the directory or upload the plugin ZIP.
+
+**ChatGPT desktop app and Codex:** the Claude command above does not work there. Add the marketplace, then install the plugin from the app:
+
+```
+codex plugin marketplace add mikkomakipaa/koekertaaja-plugin
+```
+
+Then open the Plugins Directory in the ChatGPT desktop app (or Codex), choose the "koekertaaja-plugin" marketplace and install Test Buddy. There is no command-line install step. Installing from a repository is not described for ChatGPT on the web.
 
 ## What the plugin sends and where
 

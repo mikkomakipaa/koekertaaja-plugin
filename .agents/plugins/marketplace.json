@@ -1,0 +1,21 @@
+{
+  "name": "koekertaaja-plugin",
+  "interface": {
+    "displayName": "Koekertaaja plugins"
+  },
+  "plugins": [
+    {
+      "name": "test-buddy",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mikkomakipaa/koekertaaja-plugin.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}

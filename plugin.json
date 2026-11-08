@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "test-buddy",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Test Buddy shows a practice quiz or a short lesson as an interactive screen inside the chat, for Finnish school subjects at grades 4–9.",
   "author": {
     "name": "Mikko Mäkipää",
