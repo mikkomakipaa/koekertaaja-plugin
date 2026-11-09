@@ -7,9 +7,9 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 - **Start screen:** open Test Buddy without a request and choose Play or Learn, topic and grade. Attach your own material in the chat first if you have it.
 - **Study Helper (in Play):** simpler explanation, a hint (before answering), another way to explain it (after a wrong answer) and an extra example (after answering). Before you answer, nothing gives the answer away.
 
-<img width="738" height="871" alt="Pasted 09-11-2026 at 14 56 23" src="https://github.com/user-attachments/assets/7a908750-033b-47bb-b8c9-17324e4cf61f" />
-<img width="737" height="810" alt="Pasted 09-11-2026 at 15 03 45" src="https://github.com/user-attachments/assets/e3fb45b4-d064-4faf-aab6-5b2b5a2988e6" />
-<img width="768" height="576" alt="Pasted 09-11-2026 at 14 55 56" src="https://github.com/user-attachments/assets/de203dbc-057f-4dfd-9145-c0a087d1131e" />
+<img width="369" height="435.5" alt="Pasted 09-11-2026 at 14 56 23" src="https://github.com/user-attachments/assets/7a908750-033b-47bb-b8c9-17324e4cf61f" />
+<img width="368.5" height="405" alt="Pasted 09-11-2026 at 15 03 45" src="https://github.com/user-attachments/assets/e3fb45b4-d064-4faf-aab6-5b2b5a2988e6" />
+<img width="384" height="288" alt="Pasted 09-11-2026 at 14 55 56" src="https://github.com/user-attachments/assets/de203dbc-057f-4dfd-9145-c0a087d1131e" />
 
 ## Install
 
