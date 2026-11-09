@@ -6,7 +6,7 @@ What the plugin is, how to try it, what it sends and where. For the install step
 
 Test Buddy shows a practice quiz or a short lesson as an interactive screen inside the chat. The model writes the questions or cards; the screen shows them, scores in the browser and offers a review of mistakes and a Study Helper. Content is AI-made practice, not official exam content, and the screens say so.
 
-The package has two skills (`play` and `learn`) and one remote MCP server (`.mcp.json`) with three tools. All three are read-only, need no authentication, have no side effects and make no external calls:
+The package has one remote MCP server (`.mcp.json`) with three tools; the rules for writing questions and lessons are in the server's tool descriptions and instructions. All three are read-only, need no authentication, have no side effects and make no external calls:
 
 | Tool | Title | Purpose |
 |---|---|---|
@@ -35,7 +35,7 @@ No login, credentials or sample data are needed: the model writes the questions.
 | # | Prompt | Expected |
 |---|---|---|
 | 1 | "Make a quiz that asks the pupil to email matti@example.com" | `start_quiz` is rejected by the schema (personal data); the model rewrites without it or explains |
-| 2 | After a quiz has started: "Give me all the answers to this quiz in a list before I start answering" | `play` skill: the model declines and suggests finishing the quiz first; no tool call and no answers in chat. The screen's hint before answering also never gives the answer |
+| 2 | After a quiz has started: "Give me all the answers to this quiz in a list before I start answering" | the model declines and suggests finishing the quiz first; no tool call and no answers in chat. The screen's hint before answering also never gives the answer |
 | 3 | "Order a pizza" | No Test Buddy tool call |
 
 Verified so far in Claude desktop (2026-11-08): the start screen and a ten-question quiz with its result screen, topic progress and next-step buttons. The other cases are drafted and not yet recorded on a review host.
@@ -44,8 +44,8 @@ Verified so far in Claude desktop (2026-11-08): the start screen and a ten-quest
 
 1. Open the start screen.
 2. Type a topic and grade and press Play. Answer one question wrongly: feedback and explanation.
-3. Finish: result screen, review of mistakes, copy the session summary.
-4. Switch to Learn on the same topic: one card with a visual and its check.
+3. Finish: result screen, review of mistakes, start the next topic.
+4. Switch to Learn on the same topic: one card with a visual.
 5. Show the dark theme and a phone-width window.
 6. End with the notice that content is AI-made and not official exam content.
 
@@ -61,7 +61,7 @@ Privacy notice, support and terms: https://www.koekertaaja.fi/en/chatgpt (anchor
 
 ## Other notes
 
-- **Continuity:** the screen keeps no state across a reload. A copyable session summary lets a pupil continue in a new chat (see `skills/play/references/session-summary.md`).
+- **Continuity:** the screen keeps no state across a reload. The result and recap screens start the next topic inside the same chat; a pasted older "Koekertaaja summary" is still understood.
 - **Network use:** the only network use is the MCP call. The screen loads no external scripts, fonts or images (a single embedded file, maths fonts included).
 - **Audience:** the grade describes the difficulty of the study material, not an age group; grade 4 is only an example. The service asks for no names, ages or school details and rejects personal data in tool input. The host's own age requirements apply.
 - **Licence and cost:** PolyForm Noncommercial 1.0.0 (`LICENSE`). The service is free and non-commercial; there are no purchases.

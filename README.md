@@ -9,7 +9,7 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 
 ## Add the MCP server only (no plugin)
 
-Test Buddy works without the plugin: the MCP server carries the rules for the questions and lessons itself. The plugin's two skills only add consistency (for example sending "test me" to Play and "explain" to Learn), so install it too if you want that. Everything below uses the same server and sends the same data as described under "What the plugin sends and where".
+Test Buddy works without the plugin: the MCP server carries the rules for the questions and lessons itself. The plugin is a ready-made listing of the same server for Claude Code, Claude desktop, ChatGPT and Codex. Everything below uses the same server and sends the same data as described under "What the plugin sends and where".
 
 | | |
 |---|---|
@@ -119,7 +119,7 @@ The result screen shows how each topic went and a main button "Next: <topic>". "
 
 ## What the plugin sends and where
 
-This plugin contains two skills (Play and Learn) and connects to one remote MCP server (`.mcp.json`), which shows the quiz or lesson screen. 
+This plugin connects to one remote MCP server (`.mcp.json`), which shows the quiz or lesson screen. 
 
 To show a quiz or lesson, the AI service writes it and sends its content (topic, questions and answers, and any topic names or progress counts) to that server as the input of a tool call. The server checks it and returns it for display in your chat. It does not store it, has no database or account system, makes no outgoing requests and sends nothing elsewhere. 
 
