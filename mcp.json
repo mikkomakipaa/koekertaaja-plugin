@@ -3,7 +3,7 @@
   "mcpServers": {
     "koekertaaja": {
       "type": "streamable-http",
-      "url": "https://koekertaaja-mcp-spike-mikkomakipaas-projects.vercel.app/mcp"
+      "url": "https://mcp.koekertaaja.fi/mcp"
     }
   }
 }
