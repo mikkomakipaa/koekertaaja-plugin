@@ -7,7 +7,49 @@ Practise for school exams and learn a topic step by step, as an interactive scre
 - **Start screen:** open Test Buddy without a request and choose Play or Learn, topic and grade. Attach your own material in the chat first if you have it.
 - **Study Helper:** simpler explanation, the reason why, a hint (before answering), another way to explain it (after a wrong answer) and an extra example on Learn cards. Before you answer, nothing gives the answer away.
 
-## Install
+## Add the MCP server only (no plugin)
+
+Test Buddy works without the plugin: the MCP server carries the rules for the questions and lessons itself. The plugin's two skills only add consistency (for example sending "test me" to Play and "explain" to Learn), so install it too if you want that. Everything below uses the same server and sends the same data as described under "What the plugin sends and where".
+
+| | |
+|---|---|
+| Server URL | `https://mcp.koekertaaja.fi/mcp` |
+| Transport | Streamable HTTP (remote server) |
+| Sign-in | None. There are no accounts and no API key. |
+
+Connector menus change between releases, and which plan can add a custom connector is set by Claude and ChatGPT, not by this project. If a menu below does not match what you see, search your app's help for "custom connector" or "MCP".
+
+### Claude (claude.ai and Claude desktop)
+
+1. Open **Settings** and choose **Connectors**.
+2. Choose **Add custom connector**.
+3. Name: `Koekertaaja`. Remote MCP server URL: `https://mcp.koekertaaja.fi/mcp`. Leave any advanced or sign-in fields empty.
+4. Choose **Add**. On a Team or Enterprise plan an owner may have to add the connector for the organisation first.
+5. Open a new conversation, use the **+** menu, then **Connectors**, and switch Koekertaaja on for the conversation.
+6. Say "Open Koekertaaja", or "quiz me on fractions, grade 5". The start screen or the quiz appears as an interactive screen in the chat.
+
+Claude Code (terminal) has no screens, so use the plugin there instead; to add the server alone run:
+
+```
+claude mcp add --transport http koekertaaja https://mcp.koekertaaja.fi/mcp
+```
+
+### ChatGPT
+
+1. Open **Settings**, then **Apps** (called **Connectors** in some versions) and **Advanced settings**, and turn on **Developer mode**. Custom MCP apps need it, and it is available on selected plans only.
+2. In the same place choose **Create** (or **Add custom connector**).
+3. Name: `Koekertaaja`. MCP server URL: `https://mcp.koekertaaja.fi/mcp`. Authentication: **No authentication**.
+4. Tick the box that says you trust the server, then choose **Create**.
+5. In a new chat, open the **+** menu, then **More** (or **Developer mode**), and select Koekertaaja for the chat.
+6. Say "Open Koekertaaja", or attach your material and say "quiz me". The start screen or the quiz appears as an interactive screen in the chat.
+
+### If it does not work
+
+- **Nothing appears, only text:** the app or plan you use may not show interactive screens from custom connectors. Try the desktop or web app.
+- **Old behaviour after an update:** remove the connector and add it again, then start a new conversation. Apps keep the tool list from when the connector was added.
+- **A pupil using it:** do not share names or other personal details in the chat. Questions and lessons are made by AI and are not official exam content; check them against the textbook.
+
+## Install the plugin
 
 **Claude Code**:
 
