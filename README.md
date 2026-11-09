@@ -49,6 +49,52 @@ claude mcp add --transport http koekertaaja https://mcp.koekertaaja.fi/mcp
 - **Old behaviour after an update:** remove the connector and add it again, then start a new conversation. Apps keep the tool list from when the connector was added.
 - **A pupil using it:** do not share names or other personal details in the chat. Questions and lessons are made by AI and are not official exam content; check them against the textbook.
 
+## How to use
+
+Test Buddy opens as an interactive screen inside the chat. You do not type answers into the chat: you work on the screen, and the chat only says one short sentence.
+
+### 1. Start
+
+Say what you want, in Finnish, Swedish or English. The screen and the questions follow your language.
+
+| You say | What happens |
+|---|---|
+| "Open Koekertaaja" or "Avaa Koekertaaja" | The start screen opens. Choose where to practise from (material from the chat, or a topic you type), the topic, the grade and Play or Learn. |
+| "Quiz me on fractions, grade 5" or "Kokeile minua murtoluvuista, 5. luokka" | A quiz starts straight away. |
+| "Teach me the Middle Ages, grade 6" or "Opeta minulle keskiaika, 6. luokka" | A lesson starts straight away. |
+| "Test me" with no topic | The start screen opens so you can choose. |
+
+If something is missing (topic, grade, or Play or Learn), the start screen opens and asks, instead of guessing. The grade is the difficulty of the study material (1 to 12), not the pupil's age.
+
+### 2. Use your own material
+
+Attach a photo, a PDF or pasted text of your textbook page or exam announcement in the chat, then say "quiz me" or "teach me". The questions and cards use only that material. If part of it cannot be read, you are told which part, and you can paste the text instead. The start screen lists the topics it found and you choose one or all of them. Do not attach names, contact details or other personal information.
+
+### 3. Play (quiz)
+
+- Five questions by default; on the start screen you can choose up to 30 (long practices run in rounds of ten).
+- Many question types, not only multiple choice: true or false, choose all that apply, fill in the blank, short answer, match pairs, sort into groups, put in order, find the odd one out, and fill the gaps from a word bank. Some questions have a small diagram.
+- Press **Check** to see right or wrong and why. Study Helper offers **a simpler explanation** and **a hint** before you answer, and **another way to explain it** and **an example** after.
+- At the end: your score, the state of each topic, **Review mistakes** (replays the missed questions with hints but no score), optional extra practice that never changes the score, and a new round.
+
+### 4. Learn (lessons)
+
+- Short cards, one idea each: a heading, the main explanation, an example and a "remember" line, sometimes with a timeline, process, comparison, concept map, rule sheet or word list.
+- Go through the cards with **Next**. A lesson has 1 to 24 cards, depending on how much material there is.
+- The recap lists the cards and offers a quiz on the same topic, and the next topic when your material has one you have not covered yet.
+
+### 5. After a round
+
+The result screen shows how each topic went and a main button "Next: <topic>". "Practise: <topic>" suggests the weakest one. **Learn the topic**, **Play this topic** and **New round** keep the same topic, grade, language and material, so you are not asked again. **Start over** (top right of the screen) returns to the start.
+
+### Good to know
+
+- Everything is made by AI and is not official exam content. Check it against your textbook.
+- The screen keeps no history: if you reload or open a new chat, start again and attach the material again.
+- Scores are counted in your browser and are not stored anywhere.
+- Made for Finnish school subjects. Other curricula are not supported.
+- If the screen shows "Tehtävää ei voitu näyttää" ("The task could not be shown"), say "try again".
+
 ## What is sent and where
 
 Test Buddy connects to one remote MCP server, which shows the quiz or lesson screen. 
