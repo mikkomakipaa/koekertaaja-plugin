@@ -68,7 +68,7 @@ If something is missing (topic, grade, or Play or Learn), the start screen opens
 
 ### 2. Use your own material
 
-Attach a photo, a PDF or pasted text of your textbook page or exam announcement in the chat, then say "quiz me" or "teach me". The questions and cards use only that material. If part of it cannot be read, you are told which part, and you can paste the text instead. The start screen lists the topics it found and you choose one or all of them. Do not attach names, contact details or other personal information.
+Attach a photo, a PDF or pasted text of your material or exam announcement in the chat, then say "quiz me" or "teach me". The questions and cards use only that material. If part of it cannot be read, you are told which part, and you can paste the text instead. The start screen lists the topics it found and you choose one or all of them. Do not attach names, contact details or other personal information.
 
 ### 3. Play (quiz)
 
@@ -89,7 +89,7 @@ The result screen shows how each topic went and a main button "Next: <topic>". "
 
 ### Good to know
 
-- Everything is made by AI and is not official exam content. Check it against your textbook.
+- Everything is made by AI and is not official exam content.
 - The screen keeps no history: if you reload or open a new chat, start again and attach the material again.
 - Scores are counted in your browser and are not stored anywhere.
 - Made for Finnish school subjects. Other curricula are not supported.
